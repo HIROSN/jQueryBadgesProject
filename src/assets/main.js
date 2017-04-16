@@ -8,8 +8,7 @@ $(function() {
       if (!Array.isArray(response.courses.completed)) { return; }
       response.courses.completed.forEach(function(item) {
         $('#badges').append(
-          $('<DIV></DIV>')
-          .addClass('course')
+          $('<DIV class="course"></DIV>')
           .append($('<H3></H3>').text(item.title))
           .append($('<IMG>').attr('src', item.badge))
           .append(
